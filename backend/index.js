@@ -3,6 +3,7 @@ const cors = require("cors");
 const dns = require("dns");
 require("dotenv").config();
 
+// Use Cloudflare DNS for MongoDB Atlas SRV resolution
 dns.setServers(["1.1.1.1", "1.0.0.1"]);
 
 const connectDB = require("./config/db");
